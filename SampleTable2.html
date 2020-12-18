@@ -1,0 +1,96 @@
+﻿<table id="SampleTable" style="width: 100%;">
+    <caption style="background-color: darkgray;">Transaction Types</caption>
+    <thead style="background-color: darkgray;">
+        <tr>
+            <th style="margin-top: 2px; margin-bottom: 2px;"></th>
+            <th style="margin-top: 2px; margin-bottom: 2px;">Mortgage Service</th>
+            <th style="margin-top: 2px; margin-bottom: 2px;">Background Check</th>
+            <th style="margin-top: 2px; margin-bottom: 2px;">Credit check</th>
+            <th style="margin-top: 2px; margin-bottom: 2px;">Banking Service</th>
+            <th style="margin-top: 2px; margin-bottom: 2px;">License Req.</th>
+            <th style="margin-top: 2px; margin-bottom: 2px;">Other</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Borrower:&nbsp;</td>
+            <td>
+                <CheckBox name="chkBorrMortgSvc"
+                          field-source="CurrentLoan"
+                          field-id="3860"
+                          field-text="Sample"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td>
+                <CheckBox name="checkBorrBackground"
+                          field-source="CurrentLoan"
+                          field-id="3862"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td style="align-content: center">
+                <CheckBox name="checkBorrCredit"
+                          field-source="CurrentLoan"
+                          field-id="3864"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td>
+                <CheckBox name="chkBorrBanking"
+                          field-source="CurrentLoan"
+                          field-id="3861"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td>
+                <CheckBox name="checkBorrLicense"
+                          field-source="CurrentLoan"
+                          field-id="3863"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td style="align-content: center">
+                <CheckBox name="checkBorrOther"
+                          field-source="CurrentLoan"
+                          field-id="3865"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+        </tr>
+        <tr style="background-color: lightgrey;">
+            <td>Co-Borrower:&nbsp;</td>
+            <td>
+                <CheckBox name="chkCobMortgSvc"
+                          field-source="CurrentLoan"
+                          field-id="3866"
+                          enabled="false";
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td>
+                <CheckBox name="checkCobBackground"
+                          field-source="CurrentLoan"
+                          field-id="3868"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td style="align-content: center">
+                <CheckBox name="checkCobCredit"
+                          field-source="CurrentLoan"
+                          field-id="3870"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td>
+                <CheckBox name="chkCobBanking"
+                          field-source="CurrentLoan"
+                          field-id="3867"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td>
+                <CheckBox name="checkCobLicense"
+                          field-source="CurrentLoan"
+                          field-id="3869"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+            <td style="align-content: center">
+                <CheckBox name="checkCobOther"
+                          field-source="CurrentLoan"
+                          field-id="3871"
+                          style="height: 22px; width: 22px; padding-left:5px; padding-right:5px" />
+            </td>
+        </tr>
+    </tbody>
+</table>

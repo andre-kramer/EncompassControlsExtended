@@ -1,0 +1,10 @@
+[
+  {
+    "Parent": "Panel1",
+    "ControlFile": "SampleTable.html"
+  },
+  {
+    "Parent": "Panel2",
+    "ControlFile":  "SampleTable2.html"
+  }
+]

@@ -1,0 +1,76 @@
+﻿<table id="SampleTable" style="width: 100%;">
+    <caption style="background-color: darkgray;">Borrowers</caption>
+    <thead style="background-color: darkgray;">
+        <tr>
+            <th style="margin-top: 2px; margin-bottom: 2px; width: 20%;">First Name</th>
+            <th style="margin-top: 2px; margin-bottom: 2px; width: 20%;">Last Name</th>
+            <th style="margin-top: 2px; margin-bottom: 2px; width: 20%">Marital Status</th>
+            <th style="margin-top: 2px; margin-bottom: 2px; width: 40%">Email Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <TextBox name="textBorrFirstName"
+                         field-source="CurrentLoan"
+                         field-id="4000"
+                         style="height: 22px; width:100%; padding-left:5px; padding-right:5px" />
+            </td>
+            <td>
+                <TextBox name="textBorrLastName"
+                         field-source="CurrentLoan"
+                         field-id="4002"
+                         style="height: 22px; width:100%; padding-left:5px; padding-right:5px" />
+            </td>
+            <td style="align-content: center">
+                <DropdownBox name="ddbBorrStatus"
+                             field-id="52"
+                             style="height: 22px; width:100%; padding-left:5px; padding-right:5px">
+                    <option value=""></option>
+                    <option value="Married">Married</option>
+                    <option value="Unmarried">Unmarried</option>
+                    <option value="Seperated">Seperated</option>
+                </DropdownBox>
+            </td>
+            <td>
+                <Label name="labelBorrEmail"
+                         field-source="CurrentLoan"
+                         field-id="1240"
+                         field-text="Borrower Email Missing"
+                         style="height: 22px; width:100%; padding-left:5px; padding-right:5px" />
+            </td>
+        </tr>
+        <tr style="background-color: lightgrey;">
+            <td>
+                <TextBox name="textCobFirstName"
+                         field-source="CurrentLoan"
+                         field-id="4004"
+                         style="height: 22px; width:100%; padding-left:5px; padding-right:5px" />
+            </td>
+            <td>
+                <TextBox name="textCobLastName"
+                         field-source="CurrentLoan"
+                         field-id="4006"
+                         style="height: 22px; width:100%; padding-left:5px; padding-right:5px" />
+            </td>
+            <td style="align-content: center">
+                <DropdownBox name="ddbCobStatus"
+                             field-id="84"
+                             enabled="false"
+                             style="height: 22px; width:100%; padding-left:5px; padding-right:5px">
+                    <option value=""></option>
+                    <option value="Married">Married</option>
+                    <option value="Unmarried">Unmarried</option>
+                    <option value="Seperated">Seperated</option>
+                </DropdownBox>
+            </td>
+            <td>
+                <Label name="labelCobEmail"
+                       field-source="CurrentLoan"
+                       field-id="1268"
+                       field-text="Co-Borrower Email Missing"
+                       style="height: 22px; width:100%; padding-left:5px; padding-right:5px" />
+            </td>
+        </tr>
+    </tbody>
+</table>
